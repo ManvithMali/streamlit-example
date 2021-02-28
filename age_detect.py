@@ -3,7 +3,7 @@ import pandas
 import tensorflow as tf
 import keras
 
-export_dir='/chekka/'
+export_dir='./'
 #C:/Users/narae/Desktop/
 newModel = tf.keras.models.load_model(export_dir)
 #newModel=tf.saved_model.load(
