@@ -29,5 +29,5 @@ if uploaded_file is not None:
     #test_generator = data_generator.generate_images(test_idx, is_training=False, batch_size=test_batch_size)
     age_pred, gender_pred = newModel.predict(im)
 
-    print(age_pred)
-    print(gender_pred)
+    st.write(age_pred)
+    st.write(gender_pred)
