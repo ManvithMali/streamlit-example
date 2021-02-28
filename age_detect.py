@@ -4,12 +4,8 @@ import tensorflow as tf
 import keras
 
 export_dir='h5model.h5'
-#C:/Users/narae/Desktop/
 newModel = tf.keras.models.load_model(export_dir)
-#newModel=tf.saved_model.load(
-#    export_dir, tags=None, options=None
-#)
-IM_WIDTH, IM_HEIGHT=198
+
 
 st.title("Upload + Classification Example")
 
@@ -22,11 +18,11 @@ if uploaded_file is not None:
     label = predict(uploaded_file)
 
     
-    im = image.resize((IM_WIDTH, IM_HEIGHT))
+    im = image.resize((198, 198))
 
     im = np.array(im) / 255.0
 
-    im = im.reshape(1,IM_WIDTH, IM_HEIGHT,3)
+    im = im.reshape(1,198, 198,3)
     print(im.shape)
     test_batch_size = 128
     #test_generator = data_generator.generate_images(test_idx, is_training=False, batch_size=test_batch_size)
