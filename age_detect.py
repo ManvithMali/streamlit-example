@@ -1,4 +1,4 @@
-import streamlit as streamlit
+import streamlit as st
 import pandas
 import tensorflow as tf
 import keras
