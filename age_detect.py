@@ -30,5 +30,5 @@ if uploaded_file is not None:
     age_pred, gender_pred = newModel.predict(im)
 
     
-    st.write(round(age_pred,1))
+    st.write(age_pred)
     st.write(gender_pred)
