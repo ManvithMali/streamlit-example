@@ -2,6 +2,7 @@ import streamlit as st
 import pandas
 import tensorflow as tf
 import keras
+from PIL import Image
 
 export_dir='h5model.h5'
 newModel = tf.keras.models.load_model(export_dir)
