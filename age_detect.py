@@ -3,7 +3,7 @@ import pandas
 import tensorflow as tf
 import keras
 
-export_dir='./'
+export_dir='h5model.h5'
 #C:/Users/narae/Desktop/
 newModel = tf.keras.models.load_model(export_dir, experimental_io_device = None)
 #newModel=tf.saved_model.load(
