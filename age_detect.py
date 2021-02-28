@@ -5,7 +5,7 @@ import keras
 
 export_dir='./'
 #C:/Users/narae/Desktop/
-newModel = tf.keras.models.load_model(export_dir)
+newModel = tf.keras.models.load_model(export_dir, experimental_io_device = None)
 #newModel=tf.saved_model.load(
 #    export_dir, tags=None, options=None
 #)
