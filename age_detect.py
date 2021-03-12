@@ -5,7 +5,7 @@ import keras
 import numpy as np
 from PIL import Image
 
-export_dir='model.h5'
+export_dir='h5model.h5'
 newModel = tf.keras.models.load_model(export_dir)
 
 
