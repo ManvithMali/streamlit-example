@@ -34,8 +34,8 @@ if uploaded_file is not None:
     st.write(gender_pred)
     
     if gender_pred[0][0] > gender_pred[0][1] :
-        st.write("female")
-    else:
         st.write("male")
+    else:
+        st.write("female")
     
     st.write(age_pred)
