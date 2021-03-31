@@ -38,4 +38,4 @@ if uploaded_file is not None:
     else:
         st.write("female")
     
-    st.write(age_pred*116)
+    st.write(age_pred*60)
